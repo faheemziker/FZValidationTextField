@@ -10,19 +10,14 @@
 Pod::Spec.new do |s|
   s.name             = "FZValidationTextField"
   s.version          = "0.1.0"
-  s.summary          = "A short description of FZValidationTextField."
-  s.description      = <<-DESC
-                       An optional longer description of FZValidationTextField
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FZValidationTextField"
+  s.summary          = "UITextField Validation class which will help you in form validations"
+  s.description      = "UITextField Validation class which will help you in form validations, field validations, plug and play component just set the class and define validation type and it will validate automatically."
+  s.homepage         = "https://github.com/faheemziker/FZValidationTextField"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Faheem" => "faheemzikeria@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FZValidationTextField.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/faheemziker/FZValidationTextField.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://www.facebook.com/Faheem.Zikeria'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
