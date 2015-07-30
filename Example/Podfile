@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'FZValidationTextField_Example', :exclusive => true do
+  pod "FZValidationTextField", :path => "../"
+end
+
+target 'FZValidationTextField_Tests', :exclusive => true do
+  pod "FZValidationTextField", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
