@@ -7,18 +7,17 @@
 
 #import <UIKit/UIKit.h>
 
-#define IMAGE_BACKGROUND @"textfield_background"
 #define IMAGE_ERROR_ICON @"icon_validation_fail"
 #define IMAGE_PASS_ICON  @"icon_validation_pass"
 
 
-@interface BaseTextField : UITextField
+@interface FZValidationTextField : UITextField
 {
-    UIImageView *invalidIconImageView;
+    UIImageView *iconImageView;
     
 }
-@property(nonatomic,strong) NSString *iconImageName,*placeHolderString,*validationType,*backgroundImageName,*fieldTextColor;
-@property(nonatomic,assign) BOOL showArrow;
+@property(nonatomic,strong) NSString *iconImageName,*validationType;
+@property(nonatomic,strong) NSString *customRegex,*customMessage;
 @property(nonatomic,assign) int maxLength,minLength;
 
 

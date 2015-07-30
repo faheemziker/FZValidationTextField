@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ValidationUtilityMethods.h"
+#import "FZValidationTextField.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //using code to set regex
+    [customRegexField setCustomRegex:@"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+"];    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+}
+
+-(IBAction) validateAllFields {
+    NSError *error=[ValidationUtilityMethods validateFields:@[nameField,minMaxField,emailField,mobileNumberField,customRegexField]];
+    
+    if(error) {
+        [ValidationUtilityMethods showAlertView:@"Validation Failed"
+                                    description:error.localizedDescription];
+    }
+    else {
+        [ValidationUtilityMethods showAlertView:@"Validation Pass"
+                                    description:@"Success"];
+    }
 }
 
 @end

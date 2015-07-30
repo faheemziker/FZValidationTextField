@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BF4FE0F1B6A4AAC00C3C364 /* ValidationUtilityMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4FE0E1B6A4AAC00C3C364 /* ValidationUtilityMethods.m */; };
 		8BF863C61B6788BF0066178A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF863C51B6788BF0066178A /* main.m */; };
 		8BF863C91B6788BF0066178A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF863C81B6788BF0066178A /* AppDelegate.m */; };
 		8BF863CC1B6788BF0066178A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF863CB1B6788BF0066178A /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		8BF863D11B6788BF0066178A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF863D01B6788BF0066178A /* Images.xcassets */; };
 		8BF863D41B6788BF0066178A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF863D21B6788BF0066178A /* LaunchScreen.xib */; };
 		8BF863E01B6788BF0066178A /* FZValidationTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF863DF1B6788BF0066178A /* FZValidationTextFieldTests.m */; };
+		8BF863EC1B678B5D0066178A /* FZValidationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF863EB1B678B5D0066178A /* FZValidationTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BF4FE0D1B6A4AAC00C3C364 /* ValidationUtilityMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationUtilityMethods.h; sourceTree = "<group>"; };
+		8BF4FE0E1B6A4AAC00C3C364 /* ValidationUtilityMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationUtilityMethods.m; sourceTree = "<group>"; };
 		8BF863C01B6788BF0066178A /* FZValidationTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZValidationTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF863C41B6788BF0066178A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF863C51B6788BF0066178A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		8BF863D91B6788BF0066178A /* FZValidationTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZValidationTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF863DE1B6788BF0066178A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF863DF1B6788BF0066178A /* FZValidationTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZValidationTextFieldTests.m; sourceTree = "<group>"; };
+		8BF863EA1B678B5D0066178A /* FZValidationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZValidationTextField.h; sourceTree = "<group>"; };
+		8BF863EB1B678B5D0066178A /* FZValidationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZValidationTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		8BF863C21B6788BF0066178A /* FZValidationTextField */ = {
 			isa = PBXGroup;
 			children = (
+				8BF863E91B678B5D0066178A /* FZValidationTextField */,
 				8BF863C71B6788BF0066178A /* AppDelegate.h */,
 				8BF863C81B6788BF0066178A /* AppDelegate.m */,
 				8BF863CA1B6788BF0066178A /* ViewController.h */,
@@ -117,6 +124,17 @@
 				8BF863DE1B6788BF0066178A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BF863E91B678B5D0066178A /* FZValidationTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8BF4FE0D1B6A4AAC00C3C364 /* ValidationUtilityMethods.h */,
+				8BF4FE0E1B6A4AAC00C3C364 /* ValidationUtilityMethods.m */,
+				8BF863EA1B678B5D0066178A /* FZValidationTextField.h */,
+				8BF863EB1B678B5D0066178A /* FZValidationTextField.m */,
+			);
+			path = FZValidationTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +239,8 @@
 			files = (
 				8BF863CC1B6788BF0066178A /* ViewController.m in Sources */,
 				8BF863C91B6788BF0066178A /* AppDelegate.m in Sources */,
+				8BF4FE0F1B6A4AAC00C3C364 /* ValidationUtilityMethods.m in Sources */,
+				8BF863EC1B678B5D0066178A /* FZValidationTextField.m in Sources */,
 				8BF863C61B6788BF0066178A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +436,7 @@
 				8BF863E51B6788BF0066178A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BF863E61B6788BF0066178A /* Build configuration list for PBXNativeTarget "FZValidationTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				8BF863E81B6788BF0066178A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

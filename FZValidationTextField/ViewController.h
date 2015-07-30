@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class FZValidationTextField;
+
 @interface ViewController : UIViewController
+{
+    IBOutlet FZValidationTextField *nameField,*minMaxField,*emailField,*mobileNumberField,*customRegexField;
+}
 
-
+-(IBAction) validateAllFields;
 @end
 
