@@ -1,12 +1,14 @@
 //
-//  FZViewController.m
+//  ViewController.m
 //  FZValidationTextField
 //
-//  Created by Faheem on 07/30/2015.
-//  Copyright (c) 2015 Faheem. All rights reserved.
+//  Created by Faheem Ziker on 28/07/2015.
+//  Copyright (c) 2015 V7iTech. All rights reserved.
 //
 
 #import "FZViewController.h"
+#import "ValidationUtilityMethods.h"
+#import "FZValidationTextField.h"
 
 @interface FZViewController ()
 
@@ -14,16 +16,32 @@
 
 @implementation FZViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    //using code to set regex
+    [customRegexField setCustomRegex:@"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+"];
+    
+    NSLog(@"res:%@",[[NSBundle mainBundle] resourcePath]);
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+}
+
+-(IBAction) validateAllFields {
+    NSError *error=[ValidationUtilityMethods validateFields:@[nameField,minMaxField,emailField,mobileNumberField,customRegexField]];
+    
+    if(error) {
+        [ValidationUtilityMethods showAlertView:@"Validation Failed"
+                                    description:error.localizedDescription];
+    }
+    else {
+        [ValidationUtilityMethods showAlertView:@"Validation Pass"
+                                    description:@"Success"];
+    }
 }
 
 @end

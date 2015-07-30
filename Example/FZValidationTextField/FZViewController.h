@@ -1,13 +1,20 @@
 //
-//  FZViewController.h
+//  ViewController.h
 //  FZValidationTextField
 //
-//  Created by Faheem on 07/30/2015.
-//  Copyright (c) 2015 Faheem. All rights reserved.
+//  Created by Faheem Ziker on 28/07/2015.
+//  Copyright (c) 2015 V7iTech. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
+
+@class FZValidationTextField;
 
 @interface FZViewController : UIViewController
+{
+    IBOutlet FZValidationTextField *nameField,*minMaxField,*emailField,*mobileNumberField,*customRegexField;
+}
 
+-(IBAction) validateAllFields;
 @end
+

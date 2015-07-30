@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.3):
+    - FBSnapshotTestCase/SwiftSupport
+  - FBSnapshotTestCase/Core (2.0.3)
+  - FBSnapshotTestCase/SwiftSupport (2.0.3):
+    - FBSnapshotTestCase/Core
+  - FZValidationTextField (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - FZValidationTextField (from `../`)
+
+EXTERNAL SOURCES:
+  FZValidationTextField:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: d0eeca6bf87958e088b254396ae66873f971cfb1
+  FZValidationTextField: 9d3072c498e622865bc0a35089edcef50df1d0b7
+
+COCOAPODS: 0.34.1
