@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FZValidationTextField"
-  s.version          = "0.1.0"
+  s.version          = “0.0.1”
   s.summary          = "UITextField Validation class which will help you in form validations"
   s.description      = "UITextField Validation class which will help you in form validations, field validations, plug and play component just set the class and define validation type and it will validate automatically."
   s.homepage         = "https://github.com/faheemziker/FZValidationTextField"
