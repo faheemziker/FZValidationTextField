@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.summary          = "UITextField Validation class which will help you in form validations"
   s.description      = "UITextField Validation class which will help you in form validations, field validations, plug and play component just set the class and define validation type and it will validate automatically."
   s.homepage         = "https://github.com/faheemziker/FZValidationTextField"
-  # s.screenshots     = "http://image.yogile.com/yz4btnpu/sevgtycxayd3p801nhd5pa-large.png", "www.example.com/screenshots_2"
+  s.screenshots     =  ["http://image.yogile.com/yz4btnpu/sevgtycxayd3p801nhd5pa-large.png", "www.example.com/screenshots_2"]
   s.license          = 'MIT'
   s.author           = { "Faheem" => "faheemzikeria@gmail.com" }
   s.source           = { :git => "https://github.com/faheemziker/FZValidationTextField.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://www.facebook.com/Faheem.Zikeria'
+  s.social_media_url = 'https://www.facebook.com/Faheem.Zikeria'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
